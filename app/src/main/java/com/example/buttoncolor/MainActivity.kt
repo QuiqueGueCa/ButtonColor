@@ -13,21 +13,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_layout)
 
-        val buttonToPress = findViewById<Button>(R.id.buttonToPress)
+        val btnAdd = findViewById<Button>(R.id.btnAdd)
 
-        pressingButton(buttonToPress)
+        pressingButton(btnAdd)
     }
 
 
 
-    private fun pressingButton(pressButton: Button) {
-        val numberView = findViewById<TextView>(R.id.numberView)
+    private fun pressingButton(btnAdd: Button) {
+        val tvNumber = findViewById<TextView>(R.id.tvNumber)
         var numberValue = 0
 
-        pressButton.setOnClickListener {
+        btnAdd.setOnClickListener {
             numberValue++
 
-            numberView.text = numberValue.toString()
+            tvNumber.text = numberValue.toString()
 
             randomizingColor()
         }
