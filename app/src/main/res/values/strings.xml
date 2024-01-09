@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ButtonColor</string>
+    <string name="buttonText">Púlsame!</string>
+    <string name="startingNumber">0</string>
+</resources>
