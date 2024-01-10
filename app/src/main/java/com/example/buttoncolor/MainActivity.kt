@@ -40,7 +40,19 @@ class MainActivity : AppCompatActivity() {
 
         for (i in 1..8){
 
-            randomColor += (Random().nextInt((9 + 1))).toString()
+
+            when((Random().nextInt((6 + 1)))){
+
+                0-> randomColor += (Random().nextInt((9 + 1))).toString()
+                1-> randomColor += "A"
+                2-> randomColor += "B"
+                3-> randomColor += "C"
+                4-> randomColor += "D"
+                5-> randomColor += "E"
+                6-> randomColor += "F"
+            }
+
+
 
         }
 
